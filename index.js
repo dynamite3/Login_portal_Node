@@ -151,10 +151,10 @@ app.post("/sendmail",async(request,response)=>{
           transporter.sendMail(mailOptions, function(error, info){
             if (error) {
                 console.log(error);
-                 response.send({success:false,result:info.response})
+                 response.send({success:false})
             } else {
               console.log('Email sent: ' + info.response);
-                response.send({success:true,result:info.response})
+                response.send({success:true})
             }
           });
     

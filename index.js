@@ -144,8 +144,9 @@ app.post("/sendmail",async(request,response)=>{
             from: 'testerAtwork09@gmail.com',
             to: "kaustubhmagdum@gmail.com",
             subject: 'contact page says',
-            text: `${values.firstName} ${values.lastName} says ${values.message}
-             can contact me on ${values.emailId}`
+              text:"hi"
+//             text: `${values.firstName} ${values.lastName} says ${values.message}
+//              can contact me on ${values.emailId}`
           };
 
           transporter.sendMail(mailOptions, function(error, info){

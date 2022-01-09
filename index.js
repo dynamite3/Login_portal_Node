@@ -136,7 +136,7 @@ app.post("/sendmail",async(request,response)=>{
             service: 'gmail',
             auth: {
               user: 'testerAtwork09@gmail.com',
-              pass: GMAIL_PASSWORD
+              pass: "tester@123"
             }
           });
           
